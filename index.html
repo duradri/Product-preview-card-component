@@ -22,157 +22,170 @@
     --pq: 1.2rem;
     --md: 1.4rem;
     --gd: 2rem;
-}
+    }
 
-html{
-    font-size: 62.5%;
-}
+    html{
+        font-size: 62.5%;
+    }
 
-body{
-    margin: 0rem;
-}
+    body{
+        margin: 0rem;
+    }
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-.all{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    background-color: #f3eae3;
-}
+    .all{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: #f3eae3;
+    }
 
-.card{
-    display: flex;
-    width: 54rem;
-    height: 40.5rem;
-    background-color: var(--White);
-    border-radius: 1rem;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.card .image-mobile{
-    display: none;
-}
-
-.information{
-    display: flex;
-    flex-direction: column;
-    padding: 2.8rem;
-    justify-content: space-between;
-}
-
-.title-1{
-    font-size: 1.1rem;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.5rem;
-    color: var(--Dark-grayish-blue);
-    margin-bottom: 0rem;
-}
-
-.title-2{
-    font-family: 'Fraunces', serif;
-    font-size: 3rem;
-    line-height: 2.9rem;
-    margin-bottom: 0rem;
-}
-
-.paragraph{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    color: var(--Dark-grayish-blue);
-    line-height: 2.1rem;
-}
-
-.prices{
-    display: flex;
-    align-items: center;
-}
-
-.prices span:nth-child(1){
-    font-family: 'Fraunces', serif;
-    font-size: 2.8rem;
-    margin-right: 2rem;
-    color: var(--Dark-cyan);
-    margin-top: 0rem;
-}
-
-.prices span:nth-child(2){
-    color: var(--Dark-grayish-blue);
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: line-through;
-    font-size: var(--pq);
-}
-
-button{
-    height: 4.3rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--Dark-cyan);
-    color: var(--White);
-    border: 0;
-    border-radius: .8rem;
-    cursor: pointer;
-    padding: 0;
-}
-
-button:hover{
-    background-color: #1a4031;
-}
-
-button div{
-    display: flex;
-    margin: 0;
-}
-
-button div p{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin: 0;
-    padding-left: 1rem;
-}
-
-@media (max-width: 640px){
     .card{
-        width: 34.2rem;
-        height: 61rem;
+        display: flex;
+        width: 54rem;
+        height: 40.5rem;
+        background-color: var(--White);
+        border-radius: 1rem;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .card .image-mobile{
+        display: none;
+    }
+
+    .information{
         display: flex;
         flex-direction: column;
+        padding: 2.8rem;
+        justify-content: space-between;
+    }
+
+    .title-1{
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.5rem;
+        color: var(--Dark-grayish-blue);
+        margin-bottom: 0rem;
     }
 
     .title-2{
-        font-size: 3.2rem;
-        margin-bottom: 1.2rem;
+        font-family: 'Fraunces', serif;
+        font-size: 3rem;
+        line-height: 2.9rem;
+        margin-bottom: 0rem;
     }
 
     .paragraph{
-        font-size: 1.4rem;
-        line-height: 2.4rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        color: var(--Dark-grayish-blue);
+        line-height: 2.1rem;
     }
 
-    .card .paragraph{
-        margin-bottom: 1.4rem;
+    .prices{
+        display: flex;
+        align-items: center;
     }
-    .card .prices{
-        margin-bottom: .4rem;
+
+    .prices span:nth-child(1){
+        font-family: 'Fraunces', serif;
+        font-size: 2.8rem;
+        margin-right: 2rem;
+        color: var(--Dark-cyan);
+        margin-top: 0rem;
     }
-    .card .image-desktop{
-        display: none;
+
+    .prices span:nth-child(2){
+        color: var(--Dark-grayish-blue);
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: line-through;
+        font-size: var(--pq);
     }
-    .card .image-mobile{
-        display: block;
+
+    button{
+        height: 4.3rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--Dark-cyan);
+        color: var(--White);
+        border: 0;
+        border-radius: .8rem;
+        cursor: pointer;
+        padding: 0;
     }
-    .information{
-    padding: 2.4rem;
-    justify-content: space-between;
-    gap: 1.2rem;
-}
-}
+
+    button:hover{
+        background-color: #1a4031;
+    }
+
+    button div{
+        display: flex;
+        margin: 0;
+    }
+
+    button div p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+    }
+
+    .icon-icon-cart {
+        width: 0.9375em;
+    }
+
+    @media (max-width: 640px){
+        .card{
+            width: 34.2rem;
+            height: 61rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-2{
+            font-size: 3.2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .paragraph{
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+        }
+
+        .card .paragraph{
+            margin-bottom: 1.4rem;
+        }
+        .card .prices{
+            margin-bottom: .4rem;
+        }
+        .card .image-desktop{
+            display: none;
+        }
+        .card .image-mobile{
+            display: block;
+        }
+        .information{
+        padding: 2.4rem;
+        justify-content: space-between;
+        gap: 1.2rem;
+        }
+    }
 
     </style>
 </head>
@@ -192,7 +205,12 @@ button div p{
                     </p>            
                     <button>
                         <div>
-                            <img src="/images/icon-cart.svg" alt="icon-card">
+                            <svg class="icon icon-icon-cart">
+                                <use xlink:href="#icon-icon-cart"></use>
+                                <symbol id="icon-icon-cart" viewBox="0 0 30 32">
+                                    <path fill="#fff" style="fill: var(--color1, #fff)" d="M28.766 20.776c-0.007-2.008-1.248-3.725-3.004-4.433l-0.032-0.011 2.988-11.186c0.033-0.121 0.052-0.26 0.052-0.404 0-0.373-0.128-0.717-0.342-0.989l0.003 0.003c-0.295-0.344-0.731-0.561-1.216-0.561-0.016 0-0.032 0-0.048 0.001l0.002-0h-21.894l-0.528-2.014c-0.19-0.686-0.809-1.182-1.544-1.182-0.002 0-0.004 0-0.006 0h-3.196v3.196h1.966l3.964 14.8c0.191 0.686 0.81 1.181 1.544 1.181 0.019 0 0.038-0 0.057-0.001l-0.003 0h16.444c0.859 0.031 1.543 0.735 1.543 1.599s-0.684 1.568-1.541 1.599l-0.003 0h-20.776c-0.024-0.001-0.052-0.002-0.080-0.002-0.884 0-1.6 0.716-1.6 1.6s0.716 1.6 1.6 1.6c0.028 0 0.056-0.001 0.084-0.002l-0.004 0h1.886c-0.182 0.486-0.287 1.048-0.287 1.634 0 2.648 2.146 4.794 4.794 4.794s4.794-2.146 4.794-4.794c0-0.586-0.105-1.148-0.298-1.667l0.011 0.033h3.77c-0.183 0.487-0.288 1.050-0.288 1.637 0 2.648 2.146 4.794 4.794 4.794s4.794-2.146 4.794-4.794c0-0.879-0.237-1.703-0.65-2.412l0.012 0.023c1.35-0.86 2.235-2.347 2.24-4.041v-0.001zM22.52 15.98h-13.73l-2.654-9.588h18.954l-2.57 9.59zM9.59 28.764c-0.024 0.001-0.052 0.002-0.080 0.002-0.884 0-1.6-0.716-1.6-1.6s0.716-1.6 1.6-1.6c0.028 0 0.056 0.001 0.084 0.002l-0.004-0c0.849 0.044 1.52 0.742 1.52 1.598s-0.671 1.554-1.516 1.598l-0.004 0zM22.376 28.764c-0.024 0.001-0.052 0.002-0.080 0.002-0.884 0-1.6-0.716-1.6-1.6s0.716-1.6 1.6-1.6c0.028 0 0.056 0.001 0.084 0.002l-0.004-0c0.849 0.044 1.52 0.742 1.52 1.598s-0.671 1.554-1.516 1.598l-0.004 0z"></path>
+                                </symbol>
+                            </svg>
                             <p>Add to Cart</p>
                         </div>
                     </button>
